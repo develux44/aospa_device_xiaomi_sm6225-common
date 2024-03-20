@@ -68,7 +68,10 @@ BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES  := true
 BUILD_BROKEN_VENDOR_PROPERTY_NAMESPACE := true
 
 # DT2W
-TARGET_TAP_TO_WAKE_NODE ?= "/sys/touchpanel/double_tap"
+# TARGET_TAP_TO_WAKE_NODE ?= "/sys/touchpanel/double_tap"
+
+# DT2W
+TARGET_TAP_TO_WAKE_NODE := "/proc/tp_gesture"
 
 # Filesystem
 TARGET_FS_CONFIG_GEN := device/qcom/common/config.fs
